@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        border: 10px groove blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This border will be the groove border</h1>
+  </body>
+  <script>
+    let user = prompt("Stone, Paper or Scissor.What you chose?? ");
+    let userVal = user.toUpperCase();
+    let SPS = ["STONE", "PAPER", "SCISSOR"];
+    let random = Math.floor(Math.random() * 3);
+    if (userVal == "STONE" && SPS[random] == "PAPER") {
+      console.log("Computer Wins!🤖");
+    } else if (userVal == "PAPER" && SPS[random] == "STONE") {
+      console.log("user Wins!🎉");
+    } else if (userVal == "PAPER" && SPS[random] == "SCISSOR") {
+      console.log("Computer Wins!🤖");
+    } else if (userVal == "SCISSOR" && SPS[random] == "PAPER") {
+      console.log("user Wins!🎉");
+    } else if (userVal == "SCISSOR" && SPS[random] == "STONE") {
+      console.log("Computer Wins!🤖");
+    } else if (userVal == "STONE" && SPS[random] == "SCISSOR") {
+      console.log("user Wins!🎉");
+    } else if (userVal == SPS[random]) {
+      console.log("Match Draw!☹️");
+    } else if (userVal != SPS[random]) {
+      console.log("Please enter between stone, paper and scissor🥲");
+    }
+    console.log("Computer move: " + SPS[random]);
+    console.log("User move: " + userVal);
+  </script>
+</html>
