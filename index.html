@@ -19,21 +19,21 @@
     let SPS = ["STONE", "PAPER", "SCISSOR"];
     let random = Math.floor(Math.random() * 3);
     if (userVal == "STONE" && SPS[random] == "PAPER") {
-      console.log("Computer Wins!🤖");
+      alert("Computer Wins!🤖");
     } else if (userVal == "PAPER" && SPS[random] == "STONE") {
-      console.log("user Wins!🎉");
+      alert("User Wins!🎉");
     } else if (userVal == "PAPER" && SPS[random] == "SCISSOR") {
-      console.log("Computer Wins!🤖");
+      alert("Computer Wins!🤖");
     } else if (userVal == "SCISSOR" && SPS[random] == "PAPER") {
-      console.log("user Wins!🎉");
+      alert("User Wins!🎉");
     } else if (userVal == "SCISSOR" && SPS[random] == "STONE") {
-      console.log("Computer Wins!🤖");
+      alert("Computer Wins!🤖");
     } else if (userVal == "STONE" && SPS[random] == "SCISSOR") {
-      console.log("user Wins!🎉");
+      alert("User Wins!🎉");
     } else if (userVal == SPS[random]) {
-      console.log("Match Draw!☹️");
+      alert("Match Draw!☹️");
     } else if (userVal != SPS[random]) {
-      console.log("Please enter between stone, paper and scissor🥲");
+      alert("Please enter between stone, paper and scissor🥲");
     }
     console.log("Computer move: " + SPS[random]);
     console.log("User move: " + userVal);
